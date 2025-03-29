@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: OCAgent
+  name: OnlineCourseAgent
 
 variables:
   solution: '**/*.sln'
