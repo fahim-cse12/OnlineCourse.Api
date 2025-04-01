@@ -44,6 +44,6 @@ steps:
   inputs:
     azureSubscription: 'OnlineCourse_Service'
     appType: 'webApp'
-    appName: 'OcApiService'
+    appName: 'onlinecourseapi'
     package: '$(build.artifactStagingDirectory)/*.zip'
 
