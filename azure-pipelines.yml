@@ -40,10 +40,9 @@ steps:
     ArtifactName: 'drop'
     publishLocation: Container
 
-- task: AzureWebApp@1
+- task: AzureRmWebAppDeployment@4
   inputs:
     azureSubscription: 'OnlineCourse_Service'
     appType: 'webApp'
-    appName: 'onlinecourseapi'
     package: '$(build.artifactStagingDirectory)/*.zip'
 
