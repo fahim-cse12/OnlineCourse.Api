@@ -42,8 +42,8 @@ steps:
 
 - task: AzureRmWebAppDeployment@4
   inputs:
-    azureSubscription: 'OnlineCourse_Service'
-    WebAppName: 'onlinecourseapi' 
+    ConnectedServiceName: 'OnlineCourse_Service'
+    WebAppName: 'onlinecourseapi'
     appType: 'webApp'
     package: '$(build.artifactStagingDirectory)/*.zip'
 
